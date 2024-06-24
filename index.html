@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alt Text</title>
+</head>
+
 <body>
-<p id="text">The content of the body element is displayed in your browser.</p>
-<div>
-<button onclick="colorRed()" style ="color: red">Red</button>
-<button onclick="colorOrange()" style ="color: orange">Orange</button>
-<button onclick="colorYellow()" style ="color: yellow">Yellow</button>
-<button onclick="colorGreen()" style ="color: green">Green</button>
-<button onclick="colorBlue()" style="color: blue">Blue</button>
-<button onclick="colorPurple()" style ="color: purple">Purple</button>
-<button onclick="colorPink()" style ="color: pink">Pink</button>
-<button onclick="colorBlack()" style ="color: black">Black</button>
-<button onclick="colorGray()" style ="color: gray">Gray</button>
-<button onclick ="colorWhite ()" style = "color: white" id="whiteBtn">White</button>
+<p id="text">Change the style of the text with the buttons!</p>
+<div class="dropdown">
+<button class="dropbtn">Change Color</button>
+<div class="dropdowncontent">
+<button onclick="colorRed()" id="redBtn" class="colorbutton">Red</button>
+<button onclick="colorOrange()" id="orangeBtn" class="colorbutton">Orange</button>
+<button onclick="colorYellow()" id="yellowBtn" class="colorbutton">Yellow</button>
+<button onclick="colorGreen()" id="greenBtn" class="colorbutton">Green</button>
+<button onclick="colorBlue()" id="blueBtn" class="colorbutton">Blue</button>
+<button onclick="colorPurple()" id="purpleBtn" class="colorbutton">Purple</button>
+<button onclick="colorPink()" id="pinkeBtn" class="colorbutton">Pink</button>
+<button onclick="colorBlack()" id="blackBtn" class="colorbutton">Black</button>
+<button onclick="colorGray()" id="grayBtn" class="colorbutton">Gray</button>
+<button onclick ="colorWhite ()" id="whiteBtn" class="colorbutton">White</button>
 </div>
+</div>
+
 <script>
 let whiteSet = document.getElementById('text')
 
