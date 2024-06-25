@@ -12,17 +12,26 @@
 <div class="dropdown">
 <button class="dropbtn">Change Color</button>
 <div class="dropdowncontent">
-<button onclick="colorRed()" id="redBtn" class="colorbutton">Red</button>
-<button onclick="colorOrange()" id="orangeBtn" class="colorbutton">Orange</button>
-<button onclick="colorYellow()" id="yellowBtn" class="colorbutton">Yellow</button>
-<button onclick="colorGreen()" id="greenBtn" class="colorbutton">Green</button>
-<button onclick="colorBlue()" id="blueBtn" class="colorbutton">Blue</button>
-<button onclick="colorPurple()" id="purpleBtn" class="colorbutton">Purple</button>
-<button onclick="colorPink()" id="pinkeBtn" class="colorbutton">Pink</button>
-<button onclick="colorBlack()" id="blackBtn" class="colorbutton">Black</button>
-<button onclick="colorGray()" id="grayBtn" class="colorbutton">Gray</button>
-<button onclick ="colorWhite ()" id="whiteBtn" class="colorbutton">White</button>
+<button onclick="colorRed()" id="redBtn" class="button">Red</button>
+<button onclick="colorOrange()" id="orangeBtn" class="button">Orange</button>
+<button onclick="colorYellow()" id="yellowBtn" class="button">Yellow</button>
+<button onclick="colorGreen()" id="greenBtn" class="button">Green</button>
+<button onclick="colorBlue()" id="blueBtn" class="button">Blue</button>
+<button onclick="colorPurple()" id="purpleBtn" class="button">Purple</button>
+<button onclick="colorPink()" id="pinkeBtn" class="button">Pink</button>
+<button onclick="colorBlack()" id="blackBtn" class="button">Black</button>
+<button onclick="colorGray()" id="grayBtn" class="button">Gray</button>
+<button onclick ="colorWhite ()" id="whiteBtn" class="button">White</button>
 </div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Change Font</button>
+    <div class="dropdowncontent">
+        <button onclick="timesFont ()" id="timesBtn" class="button fontBtn">Times New Roman</button>
+        <button onclick="courierFont ()" id="courierBtn" class="button fontBtn">Courier</button>
+
+        </div>
 </div>
 
 <script>
@@ -76,6 +85,14 @@ whiteSet.style.backgroundColor = 'transparent'
 function colorWhite () {
 document.body.style.color = 'white'
 whiteSet.style.backgroundColor = 'black'
+}
+
+function timesFont () {
+    text.style.fontFamily = 'Times New Roman, Times, serif'
+}
+
+function courierFont () {
+    text.style.fontFamily = 'Courier New, Courier, monospace'
 }
 </script>
 </body>

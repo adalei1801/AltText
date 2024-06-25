@@ -5,6 +5,8 @@ body {
 
 p {
     text-align: center;
+    font-size: 30px;
+    margin: 10px;
 }
 
 .button {
@@ -12,18 +14,25 @@ p {
     background-color: white;
     margin: 5px;
     padding: 10px;
+    font-size: 20px
+}
+
+.fontBtn:hover {
+    background-color: black;
+    color: white;
 }
 
 .dropbtn {
     background-color: black;
     color: white;
     padding: 16px;
-    font-size: 17px;
+    margin: 5px;
+    font-size: 25px;
     border: none;
     cursor: pointer;
     border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
-  }
+}
   
 .dropdown {
     position: relative;
@@ -59,7 +68,6 @@ p {
 
 #redBtn { 
 color: red;
-border-color: red;
 }
 
 #redBtn:hover {
@@ -69,7 +77,6 @@ border-color: red;
 
 #orangeBtn {
     color: orange;
-    border-color: orange;
 }
 
 #orangeBtn:hover {
@@ -80,7 +87,6 @@ border-color: red;
 #yellowBtn {
     color: yellow;
     background-color: black;
-    border-color: yellow;
 }
 
 #yellowBtn:hover {
@@ -90,7 +96,6 @@ border-color: red;
 
 #greenBtn {
     color: green;
-    border-color: green;
 }
 
 #greenBtn:hover {
@@ -100,7 +105,6 @@ border-color: red;
 
 #blueBtn {
 color: blue;
-border-color: blue;
 }
 
 #blueBtn:hover {
@@ -110,7 +114,6 @@ border-color: blue;
 
 #purpleBtn {
     color: purple;
-    border-color: purple;
 }
 
 #purpleBtn:hover {
@@ -119,18 +122,16 @@ border-color: blue;
 }
 
 #pinkBtn {
-    color: pink;
-    border-color: pink;
+    color: #fd8ea1;
 }
 
 #pinkBtn:hover {
     color: white;
-    background-color: pink;
+    background-color: #fd8ea1;
 }
 
 #blackBtn {
     color: black;
-    border-color: black;
 }
 
 #blackBtn:hover {
@@ -140,7 +141,6 @@ border-color: blue;
 
 #grayBtn {
     color: gray;
-    border-color: gray;
 }
 
 #grayBtn:hover {
@@ -151,10 +151,17 @@ border-color: blue;
 #whiteBtn {
     background-color: black;
     color: white;
-    border-color: white;
 }
 
 #whiteBtn:hover {
     background-color: white;
     color: black;
+}
+
+#timesBtn {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#courierBtn {
+    font-family: 'Courier New', Courier, monospace;
 }
