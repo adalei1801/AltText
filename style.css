@@ -33,6 +33,7 @@ p {
     border: none;
     cursor: pointer;
     border-radius: 2px;
+    display: inline-block;
     font-family: 'Courier New', Courier, monospace;
 }
   
@@ -53,7 +54,7 @@ p {
 .dropdowncontent button {
     color: black;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     width: 100%;
     background-color: transparent;
     border: 0px;
