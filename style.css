@@ -42,7 +42,7 @@ p {
 }
   
 .dropdowncontent {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -168,6 +168,6 @@ color: blue;
     font-family: 'Courier New', Courier, monospace;
 }
 
-#luminariBtn {
-    font-family: Playwrite USA Traditional;
+#playwriteBtn {
+    font-family: 'Playwrite US Trad, cursive';
 }
