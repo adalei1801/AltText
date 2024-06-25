@@ -33,13 +33,12 @@ p {
     border: none;
     cursor: pointer;
     border-radius: 2px;
-    display: inline-block;
     font-family: 'Courier New', Courier, monospace;
 }
   
 .dropdown {
     position: relative;
-    display: block;
+    display: inline-block;
 }
   
 .dropdowncontent {
