@@ -5,6 +5,12 @@ body {
     font-size: 15px;
 }
 
+h1 {
+    border-bottom: 3px black solid;
+    text-align: center;
+    margin: 20px;
+}
+
 p {
     text-align: center;
     font-size: 30px;
@@ -42,7 +48,7 @@ p {
 }
   
 .dropdowncontent {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
