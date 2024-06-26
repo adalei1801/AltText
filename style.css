@@ -48,6 +48,9 @@ p {
 .dropdown {
     position: relative;
     display: inline-block;
+    overflow: scroll;
+    width: 110px;
+    height: 110px;
 }
   
 .dropdowncontent {
@@ -70,7 +73,6 @@ p {
 
 .dropdown:hover .dropdowncontent {
     display: block;
-    overflow: scroll;
 }
   
 .dropdown:hover .dropbtn {
