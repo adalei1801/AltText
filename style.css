@@ -70,6 +70,9 @@ p {
 
 .dropdown:hover .dropdowncontent {
     display: block;
+    overflow: auto;
+    width: 200px;
+    height: 500px;
 }
   
 .dropdown:hover .dropbtn {
