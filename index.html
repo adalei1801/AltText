@@ -43,12 +43,21 @@
         </div>
 </div>
 
+<div class="dropdown">
+    <button class="dropbtn" id="changeTextCover">Change Text</button>
+    <div class="dropdowncontent">
+        <input type="text" id="textInput">
+        <button onclick="changeText ()" class="button" id="chageTextBtn">Change Text</button>
+    </div>
+</div>
+
 <script>
 let whiteSet = document.getElementById('text')
 let changeColorBtn = document.getElementById('changeColorBtn')
 let changeFontBtn = document.getElementById('changeFontBtn')
 let title = document.getElementById('title')
 let line = document.getElementById('line')
+let textEdit = document.getElementById('textInput')
 
 function colorRed () {
 document.body.style.color = 'red'
@@ -195,6 +204,10 @@ function robotoFont () {
     changeColorBtn.style.fontFamily = 'Roboto, sans-serif'
     changeFontBtn.style.fontFamily = 'Roboto, sans-serif'
     title.style.fontFamily = 'Roboto, sans-serif'
+}
+
+function changeText () {
+    text.innerHTML = textEdit.value
 }
 </script>
 </body>
