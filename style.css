@@ -81,6 +81,12 @@ input[type=text] {
     background-color: transparent;
     border: 0px;
 }
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+    overflow: scroll;
+    height: 200px;
+}
   
 .dropdown:hover .dropbtn {
     background-color: white;
