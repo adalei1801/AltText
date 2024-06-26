@@ -71,7 +71,7 @@ p {
 .dropdown:hover .dropdowncontent {
     display: block;
     overflow: scroll;
-    height: 50px;
+    height: 200px;
 }
   
 .dropdown:hover .dropbtn {
