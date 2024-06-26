@@ -30,7 +30,27 @@ hr {
 }
 
 input[type=text] {
-    height: 50px;
+    height: 40px;
+}
+
+input, ul.submenu {
+    display: none;
+}
+  
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+  
+input:checked~ul.submenu {
+    display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -80,12 +100,6 @@ input[type=text] {
     width: 100%;
     background-color: transparent;
     border: 0px;
-}
-
-.dropdown:visited .dropdowncontent {
-    display: block;
-    overflow: scroll;
-    height: 200px;
 }
   
 .dropdown:hover .dropbtn {
