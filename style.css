@@ -22,9 +22,11 @@ p {
 hr {
     border: none;
     color: black;
-    height: 5px;
+    height: 3px;
     border: none;
     background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button {
@@ -33,7 +35,7 @@ hr {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .fontBtn:hover {
@@ -189,9 +191,9 @@ color: blue;
 }
 
 #playwriteBtn {
-    font-family: 'Playwrite USA Traditional, cursive';
+    font-family: "Playwrite US Trad", sans-serif;
 }
 
 #robotoBtn {
-    font-family: 'Roboto, sans-serif';
+    font-family: "Roboto", sans-serif;
 }
