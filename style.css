@@ -197,3 +197,10 @@ color: blue;
 #robotoBtn {
     font-family: "Roboto", sans-serif;
 }
+
+#changeTextBtn {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    font-size: 10px;
+}
