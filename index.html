@@ -7,12 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Sofia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Alt Text</title>
 </head>
 
 <body>
 <h1 id="title">Alt Text</h1>
 <p id="text">Change the style of the text with the buttons!</p>
+<hr id="line">
 <div class="dropdown">
 <button class="dropbtn" id="changeColorBtn">Change Color</button>
 <div class="dropdowncontent">
@@ -35,6 +39,7 @@
         <button onclick="timesFont ()" id="timesBtn" class="button fontBtn">Times New Roman</button>
         <button onclick="courierFont ()" id="courierBtn" class="button fontBtn">Courier</button>
         <button onclick="playwriteFont ()" id="playwriteBtn" class="button fontBtn">Playwrite USA Traditional</button>
+        <button onclick="robotoFont ()" id="robotoBtn" class="button fontBtn">Roboto</button>
         </div>
 </div>
 
@@ -43,12 +48,18 @@ let whiteSet = document.getElementById('text')
 let changeColorBtn = document.getElementById('changeColorBtn')
 let changeFontBtn = document.getElementById('changeFontBtn')
 let title = document.getElementById('title')
+let line = document.getElementById('line')
 
 function colorRed () {
 document.body.style.color = 'red'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'red'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'red'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'red'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'red'
 }
 
 function colorOrange () {
@@ -56,6 +67,11 @@ document.body.style.color = 'orange'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'orange'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'orange'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'orange'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'orange'
 }
 
 function colorYellow () {
@@ -63,6 +79,11 @@ document.body.style.color = 'yellow'
 whiteSet.style.backgroundColor = 'black'
 title.style.borderBottomColor = 'yellow'
 title.style.backgroundColor = 'black'
+line.style.backgroundColor = 'yellow'
+changeColorBtn.style.color = 'black'
+changeColorBtn.style.backgroundColor = 'yellow'
+changeFontBtn.style.color = 'black'
+changeFontBtn.style.backgroundColor = 'yellow'
 }
 
 function colorGreen () {
@@ -70,6 +91,11 @@ document.body.style.color = 'green'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'green'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'green'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'green'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'green'
 }
 
 function colorBlue () {
@@ -77,6 +103,11 @@ document.body.style.color = 'blue'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'blue'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'blue'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'blue'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'blue'
 }
 
 function colorPurple () {
@@ -84,6 +115,11 @@ document.body.style.color = 'purple'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'purple'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'purple'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'purple'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'purple'
 }
 
 function colorPink () {
@@ -91,6 +127,11 @@ document.body.style.color = 'pink'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'pink'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'pink'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'pink'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'pink'
 }
 
 function colorBlack () {
@@ -98,6 +139,11 @@ document.body.style.color = 'black'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'black'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'black'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'black'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'black'
 }
 
 function colorGray () {
@@ -105,6 +151,11 @@ document.body.style.color = 'gray'
 whiteSet.style.backgroundColor = 'transparent'
 title.style.borderBottomColor = 'gray'
 title.style.backgroundColor = 'transparent'
+line.style.backgroundColor = 'gray'
+changeColorBtn.style.color = 'white'
+changeColorBtn.style.backgroundColor = 'gray'
+changeFontBtn.style.color = 'white'
+changeFontBtn.style.backgroundColor = 'gray'
 }
 
 function colorWhite () {
@@ -112,6 +163,10 @@ document.body.style.color = 'white'
 whiteSet.style.backgroundColor = 'black'
 title.style.borderBottomColor = 'white'
 title.style.backgroundColor = 'black'
+changeColorBtn.style.color = 'black'
+changeColorBtn.style.backgroundColor = 'white'
+changeFontBtn.style.color = 'black'
+changeFontBtn.style.backgroundColor = 'white'
 }
 
 function timesFont () {
@@ -133,6 +188,13 @@ function playwriteFont () {
     changeColorBtn.style.fontFamily = 'Playwrite US Trad, cursive'
     changeFontBtn.style.fontFamily = 'Playwrite US Trad, cursive'
     title.style.fontFamily = 'Playwrite US Trad, cursive'
+}
+
+function robotoFont () {
+    text.style.fontFamily = 'Roboto, sans-serif'
+    changeColorBtn.style.fontFamily = 'Roboto, sans-serif'
+    changeFontBtn.style.fontFamily = 'Roboto, sans-serif'
+    title.style.fontFamily = 'Roboto, sans-serif'
 }
 </script>
 </body>
