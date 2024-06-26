@@ -82,7 +82,7 @@ input[type=text] {
     border: 0px;
 }
 
-.dropdown:hover .dropdowncontent {
+.dropdown:visited .dropdowncontent {
     display: block;
     overflow: scroll;
     height: 200px;
