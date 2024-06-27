@@ -44,10 +44,11 @@
 </div>
 
 <div class="dropdown">
-    <button class="dropbtn" id="changeTextCover">Change Text</button>
-    <div class="dropdowncontent">
+    <button class="dropbtn" id="changeTextCover" onclick="showContent ()" >Change Text</button>
+    <div class="dropdowncontent" id="textcontent">
         <input type="text" id="textInput">
         <button onclick="changeText ()" id="changeTextBtn">Change Text</button>
+        <button onclick="hideBox ()" id="closeText">Close</button>
     </div>
 </div>
 
@@ -60,6 +61,8 @@ let line = document.getElementById('line')
 let textEdit = document.getElementById('textInput')
 let textCover = document.getElementById('changeTextCover')
 let changeTextBtn = document.getElementById('changeTextBtn')
+let textContent = document.getElementById('textcontent')
+let closeText = document.getElementById('closeText')
 
 function colorRed () {
 document.body.style.color = 'red'
@@ -75,6 +78,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'red'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'red'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'red'
 }
 
 function colorOrange () {
@@ -91,6 +96,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'orange'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'orange'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'orange'
 }
 
 function colorYellow () {
@@ -107,6 +114,8 @@ textCover.style.color = 'black'
 textCover.style.backgroundColor = 'yellow'
 changeTextBtn.style.color = 'black'
 changeTextBtn.style.backgroundColor = 'yellow'
+closeText.style.color = 'black'
+closeText.style.backgroundColor = 'yellow'
 }
 
 function colorGreen () {
@@ -123,6 +132,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'green'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'green'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'green'
 }
 
 function colorBlue () {
@@ -139,6 +150,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'blue'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'blue'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'blue'
 }
 
 function colorPurple () {
@@ -155,6 +168,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'purple'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'purple'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'purple'
 }
 
 function colorPink () {
@@ -171,6 +186,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'pink'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'pink'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'pink'
 }
 
 function colorBlack () {
@@ -187,6 +204,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'black'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'black'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'black'
 }
 
 function colorGray () {
@@ -203,6 +222,8 @@ textCover.style.color = 'white'
 textCover.style.backgroundColor = 'gray'
 changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'gray'
+closeText.style.color = 'white'
+closeText.style.backgroundColor = 'gray'
 }
 
 function colorWhite () {
@@ -218,6 +239,8 @@ textCover.style.color = 'black'
 textCover.style.backgroundColor = 'white'
 changeTextBtn.style.color = 'black'
 changeTextBtn.style.backgroundColor = 'white'
+closeText.style.color = 'black'
+closeText.style.backgroundColor = 'white'
 }
 
 function timesFont () {
@@ -225,6 +248,9 @@ function timesFont () {
     changeColorBtn.style.fontFamily = 'Times New Roman, Times, serif'
     changeFontBtn.style.fontFamily = 'Times New Roman, Times, serif'
     title.style.fontFamily = 'Times New Roman, Times, serif'
+    textCover.style.fontFamily = 'Times New Roman, Times, serif'
+    changeTextBtn.style.fontFamily = 'Times New Roman, Times, serif'
+    closeText.style.fontFamily = 'Times New Roman, Times, serif'
 }
 
 function courierFont () {
@@ -232,6 +258,9 @@ function courierFont () {
     changeColorBtn.style.fontFamily = 'Courier New, Courier, monospace'
     changeFontBtn.style.fontFamily = 'Courier New, Courier, monospace'
     title.style.fontFamily = 'Courier New, Courier, monospace'
+    textCover.style.fontFamily = 'Courier New, Courier, monospace'
+    changeTextBtn.style.fontFamily = 'Courier New, Courier, monospace'
+    closeText.style.fontFamily = 'Courier New, Courier, monospace'
 }
 
 function playwriteFont () {
@@ -239,6 +268,8 @@ function playwriteFont () {
     changeColorBtn.style.fontFamily = 'Playwrite US Trad, cursive'
     changeFontBtn.style.fontFamily = 'Playwrite US Trad, cursive'
     title.style.fontFamily = 'Playwrite US Trad, cursive'
+    textCover.style.fontFamily = 'Playwrite US Trad, cursive'
+    closeText.style.fontFamily = 'Playwrite US Trad, cursive'
 }
 
 function robotoFont () {
@@ -246,10 +277,21 @@ function robotoFont () {
     changeColorBtn.style.fontFamily = 'Roboto, sans-serif'
     changeFontBtn.style.fontFamily = 'Roboto, sans-serif'
     title.style.fontFamily = 'Roboto, sans-serif'
+    textCover.style.fontFamily = 'Roboto, sans-serif'
+    changeTextBtn.style.fontFamily = 'Roboto, sans-serif'
+    closeText.style.fontFamily = 'Roboto, sans-serif'
 }
 
 function changeText () {
     text.innerHTML = textEdit.value
+}
+
+function showContent () {
+    textContent.style.display = 'block'
+}
+
+function hideBox () {
+    textContent.style.display = 'none'
 }
 </script>
 </body>

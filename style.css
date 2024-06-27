@@ -202,11 +202,11 @@ color: blue;
     font-family: "Roboto", sans-serif;
 }
 
-#changeTextBtn {
+#changeTextBtn, #closeText {
     background-color: black;
     color: white;
     border-radius: 2px;
     font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
