@@ -46,7 +46,9 @@
 <div class="dropdown">
     <button class="dropbtn" id="changeTextCover" onclick="showContent ()" >Change Text</button>
     <div class="dropdowncontent" id="textcontent">
-        <input type="text" id="textInput">
+        <div id="textdiv">
+        <textarea name="text" row="5" cols="30" id="textInput"></textarea>
+        </div>
         <button onclick="changeText ()" id="changeTextBtn">Change Text</button>
         <button onclick="hideBox ()" id="closeText">Close</button>
     </div>
