@@ -218,6 +218,11 @@ color: blue;
     color: white;
     border-radius: 2px;
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#changeTextBtn:hover, #closeText:hover{
+    background-color: white;
+    color: black;
 }
