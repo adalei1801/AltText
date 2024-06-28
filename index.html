@@ -69,7 +69,7 @@
         <button onclick="noline ()" id="nolineBtn" class="button styleBtn">No Line</button>
         <button onclick="italic ()" id="italicBtn" class="button styleBtn">Italic</button>
         <button onclick="noItalic ()" id="noItalicBtn" class="button styleBtn">No Italic</button>
-        <button onclick="closeStyle ()" id="closeStyle" class="button">Close</button>
+        <button onclick="closeStyle ()" id="closeStyleBtn" class="button">Close</button>
     </div>
 </div>
 
@@ -86,22 +86,28 @@
 
 <script>
 let whiteSet = document.getElementById('text')
+
 let changeColorBtn = document.getElementById('changeColorBtn')
 let changeFontBtn = document.getElementById('changeFontBtn')
+
 let title = document.getElementById('title')
 let line = document.getElementById('line')
+
 let textEdit = document.getElementById('textInput')
 let textCover = document.getElementById('changeTextCover')
 let changeTextBtn = document.getElementById('changeTextBtn')
 let textContent = document.getElementById('textcontent')
-let styleContent = document.getElementById('stylecontent')
 let closeText = document.getElementById('closeText')
+
+let changeStyleBtn = document.getElementsById('changeStyleBtn')
+let styleContent = document.getElementById('stylecontent')
 let boldBtn = document.getElementById('boldBtn')
 let unboldTextBtn = document.getElementById('unboldBtn')
 let underlineBtn = document.getElementById('underlineBtn')
 let nolineBtn = document.getElementById('nolineBtn')
 let italicBtn = document.getElementById('italicBtn')
 let noItalicBtn = document.getElementById('noItalicBtn')
+let closeStyleBtn = document.getElementById('closeStyleBtn')
 
 function colorRed () {
 document.body.style.color = 'red'
@@ -115,10 +121,8 @@ changeFontBtn.style.color = 'white'
 changeFontBtn.style.backgroundColor = 'red'
 textCover.style.color = 'white'
 textCover.style.backgroundColor = 'red'
-changeTextBtn.style.color = 'white'
-changeTextBtn.style.backgroundColor = 'red'
-closeText.style.color = 'white'
-closeText.style.backgroundColor = 'red'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'red'
 }
 
 function colorOrange () {
@@ -137,6 +141,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'orange'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'orange'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'orange'
 }
 
 function colorYellow () {
@@ -155,6 +161,8 @@ changeTextBtn.style.color = 'black'
 changeTextBtn.style.backgroundColor = 'yellow'
 closeText.style.color = 'black'
 closeText.style.backgroundColor = 'yellow'
+changeStyleBtn.style.color = 'black'
+changeStyleBtn.style.backgroundColor = 'yellow'
 }
 
 function colorGreen () {
@@ -173,6 +181,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'green'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'green'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'green'
 }
 
 function colorBlue () {
@@ -191,6 +201,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'blue'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'blue'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'blue'
 }
 
 function colorPurple () {
@@ -209,6 +221,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'purple'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'purple'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'purple'
 }
 
 function colorPink () {
@@ -227,6 +241,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'pink'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'pink'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'pink'
 }
 
 function colorBlack () {
@@ -245,6 +261,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'black'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'black'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'black'
 }
 
 function colorGray () {
@@ -263,6 +281,8 @@ changeTextBtn.style.color = 'white'
 changeTextBtn.style.backgroundColor = 'gray'
 closeText.style.color = 'white'
 closeText.style.backgroundColor = 'gray'
+changeStyleBtn.style.color = 'white'
+changeStyleBtn.style.backgroundColor = 'gray'
 }
 
 function colorWhite () {
@@ -280,6 +300,8 @@ changeTextBtn.style.color = 'black'
 changeTextBtn.style.backgroundColor = 'white'
 closeText.style.color = 'black'
 closeText.style.backgroundColor = 'white'
+changeStyleBtn.style.color = 'black'
+changeStyleBtn.style.backgroundColor = 'white'
 }
 
 function timesFont () {
@@ -290,6 +312,7 @@ function timesFont () {
     textCover.style.fontFamily = 'Times New Roman, Times, serif'
     changeTextBtn.style.fontFamily = 'Times New Roman, Times, serif'
     closeText.style.fontFamily = 'Times New Roman, Times, serif'
+    changeStyleBtn.style.fontFamily = 'Times New Roman, Times, serif'
 }
 
 function courierFont () {
@@ -300,6 +323,7 @@ function courierFont () {
     textCover.style.fontFamily = 'Courier New, Courier, monospace'
     changeTextBtn.style.fontFamily = 'Courier New, Courier, monospace'
     closeText.style.fontFamily = 'Courier New, Courier, monospace'
+     changeStyleBtn.style.fontFamily = 'Courier New, Courier, monospace'
 }
 
 function playwriteFont () {
@@ -310,6 +334,7 @@ function playwriteFont () {
     textCover.style.fontFamily = 'Playwrite US Trad, cursive'
     changeTextBtn.style.fontFamily = 'Playwrite US Trad, cursive'
     closeText.style.fontFamily = 'Playwrite US Trad, cursive'
+     changeStyleBtn.style.fontFamily = 'Playwrite US Trad, cursive'
 }
 
 function robotoFont () {
@@ -320,6 +345,7 @@ function robotoFont () {
     textCover.style.fontFamily = 'Roboto, sans-serif'
     changeTextBtn.style.fontFamily = 'Roboto, sans-serif'
     closeText.style.fontFamily = 'Roboto, sans-serif'
+     changeStyleBtn.style.fontFamily = 'Roboto, sans-serif'
 }
 
 function montserratFont () {
@@ -330,6 +356,7 @@ function montserratFont () {
     textCover.style.fontFamily = 'Montserrat, sans-serif'
     changeTextBtn.style.fontFamily = 'Montserrat, sans-serif'
     closeText.style.fontFamily = 'Montserrat, sans-serif'
+     changeStyleBtn.style.fontFamily = 'Montserrat, sans-serif'
 }
 
 function oswaldFont () {
@@ -340,6 +367,7 @@ function oswaldFont () {
     textCover.style.fontFamily = 'Oswald, sans-serif'
     changeTextBtn.style.fontFamily = 'Oswald, sans-serif'
     closeText.style.fontFamily = 'Oswald, sans-serif'
+     changeStyleBtn.style.fontFamily = 'Oswald, sans-serif'
 }
 
 function bebasFont () {
@@ -350,6 +378,7 @@ function bebasFont () {
     textCover.style.fontFamily = 'Bebas Neue, sans-serif'
     changeTextBtn.style.fontFamily = 'Bebas Neue, sans-serif'
     closeText.style.fontFamily = 'Bebas Neue, sans-serif'
+     changeStyleBtn.style.fontFamily = 'Bebas Neue, sans-serif'
 }
 
 function bold () {
@@ -386,6 +415,14 @@ function noItalic () {
     text.style.fontStyle = 'normal'
     italicBtn.style.display = 'block'
     noItalicBtn.style.display = 'none'
+}
+
+function showStyle () {
+    styleContent.style.display = 'block'
+}
+
+function closeStyle () {
+    styleContent.style.display = 'none'
 }
 
 function changeText () {
