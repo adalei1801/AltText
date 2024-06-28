@@ -213,6 +213,10 @@ color: blue;
     font-family: 'Bebas Neue', sans-serif;
 }
 
+#unboldBtn, #nolineBtn, #noItalicBtn {
+    display: none;
+}
+
 #changeTextBtn, #closeText {
     background-color: black;
     color: white;
@@ -220,6 +224,8 @@ color: blue;
     font-size: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #changeTextBtn:hover, #closeText:hover{

@@ -60,14 +60,27 @@
         </div>
 </div>
 
+<div>
+    <button onclick="showStyle ()" class="dropbtn" id="changeStyleBtn">Change Style</button>
+    <div class="dropdowncontent" id="stylecontent">
+        <button onclick="bold ()" id="boldBtn" class="button styleBtn">Bold Text</button>
+        <button onclick="unbold ()" id="unboldBtn" class="button styleBtn">Unbold Text</button>
+        <button onclick="underline ()" id="underlineBtn" class="button styleBtn">Underline</button>
+        <button onclick="noline ()" id="nolineBtn" class="button styleBtn">No Line</button>
+        <button onclick="italic ()" id="italicBtn" class="button styleBtn">Italic</button>
+        <button onclick="noItalic ()" id="noItalicBtn" class="button styleBtn">No Italic</button>
+        <button onclick="closeStyle ()" id="closeStyle" class="button">Close</button>
+    </div>
+</div>
+
 <div class="dropdown">
     <button class="dropbtn" id="changeTextCover" onclick="showContent ()" >Change Text</button>
     <div class="dropdowncontent" id="textcontent">
         <div id="textdiv">
         <textarea name="text" row="5" cols="30" id="textInput"></textarea>
         </div>
-        <button onclick="changeText ()" id="changeTextBtn">Change Text</button>
-        <button onclick="hideBox ()" id="closeText">Close</button>
+        <button onclick="changeText ()" id="changeTextBtn" class="button">Change Text</button>
+        <button onclick="hideBox ()" id="closeText" class="button">Close</button>
     </div>
 </div>
 
@@ -81,7 +94,14 @@ let textEdit = document.getElementById('textInput')
 let textCover = document.getElementById('changeTextCover')
 let changeTextBtn = document.getElementById('changeTextBtn')
 let textContent = document.getElementById('textcontent')
+let styleContent = document.getElementById('stylecontent')
 let closeText = document.getElementById('closeText')
+let boldBtn = document.getElementById('boldBtn')
+let unboldTextBtn = document.getElementById('unboldBtn')
+let underlineBtn = document.getElementById('underlineBtn')
+let nolineBtn = document.getElementById('nolineBtn')
+let italicBtn = document.getElementById('italicBtn')
+let noItalicBtn = document.getElementById('noItalicBtn')
 
 function colorRed () {
 document.body.style.color = 'red'
@@ -332,6 +352,42 @@ function bebasFont () {
     closeText.style.fontFamily = 'Bebas Neue, sans-serif'
 }
 
+function bold () {
+    text.style.fontWeight = 'bold'
+    boldBtn.style.display = 'none'
+    unboldBtn.style.display = 'block'
+}
+
+function unbold () {
+    text.style.fontWeight = 'normal'
+    boldBtn.style.display = 'block'
+    unboldBtn.style.display = 'none'
+}
+
+function underline () {
+    text.style.textDecoration = 'underline'
+    underlineBtn.style.display = 'none'
+    nolineBtn.style.display = 'block'
+}
+
+function noline () {
+    text.style.textDecoration = 'none'
+    underlineBtn.style.display = 'block'
+    nolineBtn.style.display = 'none'
+}
+
+function italic () {
+    text.style.fontStyle = 'italic'
+    italicBtn.style.display = 'none'
+    noItalicBtn.style.display = 'block'
+}
+
+function noItalic () {
+    text.style.fontStyle = 'none'
+    italicBtn.style.display = 'block'
+    noItalicBtn.style.display = 'none'
+}
+
 function changeText () {
     text.innerHTML = textEdit.value
 }
@@ -343,6 +399,7 @@ function showContent () {
 function hideBox () {
     textContent.style.display = 'none'
 }
+
 </script>
 </body>
 </html>
