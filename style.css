@@ -225,7 +225,7 @@ color: blue;
     font-style: italic;
 }
 
-#boldBtn, #underlineBtn, #italicBtn, #closeStyleBtn {
+.styleBtn {
     background-color: white;
     color: black;
     border-radius: 2px;
@@ -234,7 +234,7 @@ color: blue;
     padding: 10px;
 }
 
-#boldBtn:hover, #underlineBtn:hover, #italicBtn:hover, #closeStyleBtn:hover {
+.styleBtn:hover {
     background-color: black;
     color: white;
 }
