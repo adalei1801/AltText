@@ -213,17 +213,50 @@ color: blue;
     font-family: 'Bebas Neue', sans-serif;
 }
 
+#boldBtn {
+    font-weight: bold;
+}
+
+#underlineBtn {
+    text-decoration: underline;
+}
+
+#italicBtn {
+    font-style: italic;
+}
+
+#boldBtn, #underlineBtn, #italicBtn {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+#boldBtn:hover, #underlineBtn:hover, #italicBtn:hover {
+    background-color: white;
+    color: black;
+}
+
 #unboldBtn, #nolineBtn, #noItalicBtn {
     display: none;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #changeTextBtn, #closeText {
     background-color: black;
     color: white;
     border-radius: 2px;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
