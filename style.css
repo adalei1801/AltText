@@ -205,6 +205,14 @@ color: blue;
     font-family: "Montserrat", sans-serif;
 }
 
+#oswaldBtn {
+    font-family: 'Oswald', sans-serif;
+}
+
+#bebasBtn {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 #changeTextBtn, #closeText {
     background-color: black;
     color: white;

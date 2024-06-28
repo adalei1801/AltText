@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&family=Sofia&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Alt Text</title>
 </head>
 
@@ -40,10 +51,12 @@
     <button class="dropbtn" id="changeFontBtn">Change Font</button>
     <div class="dropdowncontent">
         <button onclick="timesFont ()" id="timesBtn" class="button fontBtn">Times New Roman</button>
-        <button onclick="courierFont ()" id="courierBtn" class="button fontBtn">Courier</button>
+        <button onclick="courierFont ()" id="courierBtn" class="button fontBtn">Courier New</button>
         <button onclick="playwriteFont ()" id="playwriteBtn" class="button fontBtn">Playwrite USA Traditional</button>
         <button onclick="robotoFont ()" id="robotoBtn" class="button fontBtn">Roboto</button>
         <button onclick="montserratFont ()" id="montserratBtn" class="button fontBtn">Monsterrat</button>
+        <button onclick="oswaldFont ()" id="oswaldBtn" class="button fontBtn">Oswald</button>
+        <button onclick="bebasFont ()" id="bebasBtn" class="button fontBtn">Bebas Neue</button>
         </div>
 </div>
 
@@ -297,6 +310,26 @@ function montserratFont () {
     textCover.style.fontFamily = 'Montserrat, sans-serif'
     changeTextBtn.style.fontFamily = 'Montserrat, sans-serif'
     closeText.style.fontFamily = 'Montserrat, sans-serif'
+}
+
+function oswaldFont () {
+    text.style.fontFamily = 'Oswald, sans-serif'
+    changeColorBtn.style.fontFamily = 'Oswald, sans-serif'
+    changeFontBtn.style.fontFamily = 'Oswald, sans-serif'
+    title.style.fontFamily = 'Oswald, sans-serif'
+    textCover.style.fontFamily = 'Oswald, sans-serif'
+    changeTextBtn.style.fontFamily = 'Oswald, sans-serif'
+    closeText.style.fontFamily = 'Oswald, sans-serif'
+}
+
+function bebasFont () {
+    text.style.fontFamily = 'Bebas Neue, sans-serif'
+    changeColorBtn.style.fontFamily = 'Bebas Neue, sans-serif'
+    changeFontBtn.style.fontFamily = 'Bebas Neue, sans-serif'
+    title.style.fontFamily = 'Bebas Neue, sans-serif'
+    textCover.style.fontFamily = 'Bebas Neue, sans-serif'
+    changeTextBtn.style.fontFamily = 'Bebas Neue, sans-serif'
+    closeText.style.fontFamily = 'Bebas Neue, sans-serif'
 }
 
 function changeText () {
