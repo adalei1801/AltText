@@ -61,7 +61,7 @@
 </div>
 
 <div class="dropdown">
-    <button onclick="showStyle ()" class="dropbtn" id="changeStyleBtn">Change Style</button>
+    <button class="dropbtn" id="changeStyleBtn">Change Style</button>
     <div class="dropdowncontent" id="stylecontent">
         <button onclick="bold ()" id="boldBtn" class="button styleBtn">Bold Text</button>
         <button onclick="unbold ()" id="unboldBtn" class="button styleBtn">Unbold Text</button>
@@ -69,7 +69,6 @@
         <button onclick="noline ()" id="nolineBtn" class="button styleBtn">No Line</button>
         <button onclick="italic ()" id="italicBtn" class="button styleBtn">Italic</button>
         <button onclick="noItalic ()" id="noItalicBtn" class="button styleBtn">No Italic</button>
-        <button onclick="closeStyle ()" id="closeStyleBtn" class="button styleBtn">Close</button>
     </div>
 </div>
 
@@ -95,7 +94,7 @@ let textCover = document.getElementById('changeTextCover')
 let changeTextBtn = document.getElementById('changeTextBtn')
 let textContent = document.getElementById('textcontent')
 let closeText = document.getElementById('closeText')
-let changeStyleBtn = document.getElementsById('changeStyleBtn')
+let changeStyleBtn = document.getElementById('changeStyleBtn')
 let styleContent = document.getElementById('stylecontent')
 let boldBtn = document.getElementById('boldBtn')
 let unboldTextBtn = document.getElementById('unboldBtn')
@@ -411,14 +410,6 @@ function noItalic () {
     text.style.fontStyle = 'normal'
     italicBtn.style.display = 'block'
     noItalicBtn.style.display = 'none'
-}
-
-function showStyle () {
-    styleContent.style.display = 'block'
-}
-
-function closeStyle () {
-    styleContent.style.display = 'none'
 }
 
 function changeText () {
